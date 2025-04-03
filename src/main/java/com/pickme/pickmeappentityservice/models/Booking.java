@@ -1,9 +1,6 @@
-package com.pickme.pickmeappauthservice.models;
+package com.pickme.pickmeappentityservice.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -20,8 +17,8 @@ public class Booking extends  BaseModel{
 
     @Enumerated(value = EnumType.STRING)
     private BookingStatus bookingStatus;
-    private LocalDateTime start;
-    private LocalDateTime end;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
     private Long distance;
 
     @ManyToOne
@@ -29,4 +26,11 @@ public class Booking extends  BaseModel{
 
     @ManyToOne
     private Passenger passenger;
+
+
+    @OneToOne(cascade = {CascadeType.ALL})
+    private ExactLocation startLocation;
+
+    @OneToOne(cascade = {CascadeType.ALL})
+    private ExactLocation endLocation;
 }

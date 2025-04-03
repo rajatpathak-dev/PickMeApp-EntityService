@@ -1,2 +1,16 @@
-package com.pickme.pickmeappentityservice.models;public class ExactLocation {
+package com.pickme.pickmeappentityservice.models;
+
+import jakarta.persistence.Entity;
+import lombok.*;
+
+@Entity
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ExactLocation extends BaseModel{
+
+    private Double latitude;
+    private Double longitude;
 }

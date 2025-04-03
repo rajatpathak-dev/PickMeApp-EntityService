@@ -1,4 +1,4 @@
-package com.pickme.pickmeappauthservice.models;
+package com.pickme.pickmeappentityservice.models;
 
 public enum BookingStatus {
     SCHEDULED,

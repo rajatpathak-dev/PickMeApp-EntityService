@@ -1,4 +1,4 @@
-package com.pickme.pickmeappauthservice.models;
+package com.pickme.pickmeappentityservice.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;

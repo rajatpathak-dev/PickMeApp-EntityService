@@ -1,6 +1,5 @@
-package com.pickme.pickmeapp_review_service.models;
+package com.pickme.pickmeappentityservice.models;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import lombok.Getter;

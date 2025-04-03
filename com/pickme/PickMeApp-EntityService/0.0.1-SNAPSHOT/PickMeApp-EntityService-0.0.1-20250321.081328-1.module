@@ -1,0 +1,77 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pickme",
+    "module": "PickMeApp-EntityService",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "PickMeApp-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "PickMeApp-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 13013,
+          "sha512": "ed4272e70a334d80a9d401fcfcf64888bb82229b76910938164a72a368007fc335e2170b2c26ee03e6aa7f5c342de4287db78d73ac74c9f1a891febf91c71668",
+          "sha256": "99060cae8b47aa25fd2c12792b990862d97d30572bd7fa0918ac6d1eb8a2fc75",
+          "sha1": "616f475f531b6621e3c969c9aa23edf2374dd7da",
+          "md5": "7a49e91d636f0c4e73812cb7dd5af62e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa"
+        },
+        {
+          "group": "org.flywaydb",
+          "module": "flyway-mysql",
+          "version": {
+            "requires": "11.3.4"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j"
+        }
+      ],
+      "files": [
+        {
+          "name": "PickMeApp-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "PickMeApp-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 13013,
+          "sha512": "ed4272e70a334d80a9d401fcfcf64888bb82229b76910938164a72a368007fc335e2170b2c26ee03e6aa7f5c342de4287db78d73ac74c9f1a891febf91c71668",
+          "sha256": "99060cae8b47aa25fd2c12792b990862d97d30572bd7fa0918ac6d1eb8a2fc75",
+          "sha1": "616f475f531b6621e3c969c9aa23edf2374dd7da",
+          "md5": "7a49e91d636f0c4e73812cb7dd5af62e"
+        }
+      ]
+    }
+  ]
+}

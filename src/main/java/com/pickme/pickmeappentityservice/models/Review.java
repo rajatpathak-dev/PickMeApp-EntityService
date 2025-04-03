@@ -1,14 +1,7 @@
-package com.pickme.pickmeapp_review_service.models;
+package com.pickme.pickmeappentityservice.models;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-
-
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "booking_reviews")
@@ -26,7 +19,7 @@ public class Review extends BaseModel {
    @Column(nullable = false)
    private Double rating;
 
-   @OneToOne
+   @OneToOne(cascade = {CascadeType.ALL},fetch = FetchType.LAZY)
    @JoinColumn(nullable = false,name = "booking_id")
    private Booking booking;
 

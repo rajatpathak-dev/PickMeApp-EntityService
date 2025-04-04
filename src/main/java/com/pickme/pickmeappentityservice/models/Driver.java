@@ -19,10 +19,12 @@ import java.util.List;
 public class Driver extends BaseModel{
 
     private  String name;
+
+    @Column(unique = true)
     private String phoneNo;
     private boolean isActive;
 
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true)
     private String email;
 
     @Column(nullable = false)
@@ -52,4 +54,6 @@ public class Driver extends BaseModel{
 
     @OneToMany(mappedBy = "driver")
     private List<Booking> bookingList = new ArrayList<>();
+
+
 }

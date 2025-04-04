@@ -18,11 +18,16 @@ public class Car extends BaseModel{
     @Enumerated(value = EnumType.STRING)
     private CarType carType;
 
+
+    @ManyToOne(cascade = {CascadeType.ALL})
+    private Color color;
+
     @OneToOne
     private Driver driver;
 
-    @ManyToOne
-    private Color color;
+
+
+
 
 
 }
